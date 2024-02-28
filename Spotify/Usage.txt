@@ -1,0 +1,9 @@
+Install:
+
+Powershell.exe -executionpolicy bypass -windowstyle hidden -file Install.ps1
+
+Uninstall
+
+Powershell.exe -executionpolicy bypass -windowstyle hidden -file Uninstall.ps1
+
+Version 1.0.0
