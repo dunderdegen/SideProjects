@@ -66,7 +66,7 @@ Write-log "Download completed. Installation file resides at: ${dest}"
 
 # Installing MSI Package
 $fileName = Get-ChildItem -Path $dest
-msiexec.exe /i "${dest}\$appName" /qn
+msiexec.exe /i "${dest}\$fileName" /qn
 Start-Sleep -Seconds 10
 &"C:\Program Files (x86)\GitHub Desktop Deployment\GitHubDesktopDeploymentTool.exe"
 
