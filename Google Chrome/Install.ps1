@@ -65,7 +65,7 @@ Write-log "Download completed. Installation file resides at: ${dest}"
 # Installing MSI Package
 $fileName = Get-ChildItem -Path $dest
 msiexec.exe /i "${dest}\$fileName" /qn
-
+Start-sleep -Seconds 20
 # Removing temporary folder
 Remove-Item -Path $dest -Recurse -Force
 
